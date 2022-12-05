@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/traininsea">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_16"
+                android:layout_marginTop="@dimen/margin_top_16"
+                android:layout_marginRight="@dimen/margin_right_16"
+                android:layout_marginBottom="@dimen/margin_bottom_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liste des positions panne ferroviaire"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:text="Latitude"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:text="Longitude"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="101dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:text="Date"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="92dp"
+                            android:layout_height="match_parent"
+                            android:padding="5dip"
+                            android:text="Time"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/la"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textIsSelectable="true"
+                            android:focusable="true"
+                            android:longClickable="true"/>
+
+                        <TextView
+                            android:id="@+id/lo"
+                            android:layout_width="94dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textIsSelectable="true"
+                            android:focusable="true"
+                            android:longClickable="true"/>
+
+                        <TextView
+                            android:id="@+id/da"
+                            android:layout_width="97dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textIsSelectable="true"
+                            android:focusable="true"
+                            android:longClickable="true"/>
+
+                        <TextView
+                            android:id="@+id/ti"
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textIsSelectable="true"
+                            android:focusable="true"
+                            android:longClickable="true"/>
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_16"
+                android:layout_marginTop="@dimen/margin_top_16"
+                android:layout_marginRight="@dimen/margin_right_16"
+                android:layout_marginBottom="@dimen/margin_bottom_16"
+                android:orientation="vertical">
+
+                <CalendarView
+                    android:id="@+id/calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="307dp"
+                    android:layout_gravity="center"
+                    android:theme="@style/Theme.Design" />
+
+                <EditText
+                    android:id="@+id/editLatitude"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:background="@drawable/edit_style"
+
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="Latitude"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+                <EditText
+                    android:id="@+id/editLongitude"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:background="@drawable/edit_style"
+
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="Longitude"
+                    android:inputType="text"
+                    android:maxLength="9"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/benvoyer"
+                        android:layout_width="175dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="@dimen/margin_right_16"
+                        android:layout_marginTop="@dimen/margin_top_8"
+                        android:layout_marginRight="@dimen/margin_right_16"
+                        android:layout_marginBottom="@dimen/margin_top_8"
+                        android:background="@drawable/red_style"
+                        android:text="envoyer à chef m"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/res"
+                        android:layout_width="149dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="@dimen/margin_right_16"
+                        android:layout_marginTop="@dimen/margin_top_8"
+                        android:layout_marginRight="@dimen/margin_right_16"
+                        android:layout_marginBottom="@dimen/margin_top_8"
+                        android:background="@drawable/red_style"
+                        android:text="reset"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
