@@ -5,6 +5,9 @@ For this, after authentication, the technician inspecting the railway tracks pos
 A notification will be sent to the technical team leader. After the repair, the manager will modify the breakdown status and must describe the intervention and add the repair date.
 
 He will be able to view all failures and will be able to see the details of each failure.
+
 Important notes:
+
 1)Disable application Google Maps in your phone.
+
 2)Active your location in settings phone.
