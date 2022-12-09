@@ -10,4 +10,4 @@ Important notes:
 
 1)Disable application Google Maps in your phone.
 
-2)Active your location in settings phone.
+2)Tap the icon location in your phone.
